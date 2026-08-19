@@ -713,9 +713,9 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+    #define DEFAULT_Kp  31.2
+    #define DEFAULT_Ki   3.39
+    #define DEFAULT_Kd  71.7
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -2379,7 +2379,7 @@
 #define HOMING_FEEDRATE_MM_M { (20*60), (20*60), (4*60) }
 
 // Edit homing feedrates with M210 and MarlinUI menu items
-//#define EDITABLE_HOMING_FEEDRATE
+#define EDITABLE_HOMING_FEEDRATE
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
